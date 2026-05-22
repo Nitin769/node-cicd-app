@@ -31,7 +31,7 @@ pipeline {
                 sh '''
                 docker stop node-cicd-app || true
                 docker rm node-cicd-app || true
-                docker run -d --name node-cicd-app -p 3000:3000 node-cicd-app
+                docker run -d --name node-cicd-app -p 3001:3001 node-cicd-app
                 '''
             }
         }
